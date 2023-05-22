@@ -117,16 +117,16 @@ describe('useChainId hook', () => {
     jest.spyOn(useWalletHook, 'default').mockImplementation(
       () =>
         ({
-          chainId: '1337',
+          chainId: '197878',
         } as ConnectedWallet),
     )
 
     jest.spyOn(useChains, 'default').mockImplementation(() => ({
-      configs: [{ chainId: '1337' } as ChainInfo],
+      configs: [{ chainId: '197878' } as ChainInfo],
     }))
 
     const { result } = renderHook(() => useChainId())
-    expect(result.current).toBe('1337')
+    expect(result.current).toBe('197878')
   })
 
   it('should return the last used chain id if no chain in the URL and the connect wallet chain id is not present in the chain configs', () => {
@@ -137,7 +137,7 @@ describe('useChainId hook', () => {
     jest.spyOn(useWalletHook, 'default').mockImplementation(
       () =>
         ({
-          chainId: '1337',
+          chainId: '197878',
         } as ConnectedWallet),
     )
 
