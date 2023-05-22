@@ -84,7 +84,7 @@ export const HelpCenterArticle = {
 
 // Social
 export const DISCORD_URL = 'https://chat.safe.global'
-export const TWITTER_URL = 'https://twitter.com/safe'
+export const TWITTER_URL = 'https://twitter.com/Butane_Network'
 
 // Legal
 export const IS_OFFICIAL_HOST = process.env.NEXT_PUBLIC_IS_OFFICIAL_HOST || false
